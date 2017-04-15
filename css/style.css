@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .rotating > .animated {
   display: inline-block;
-  -webkit-transition: -webkit-transform 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.1s ease-in;
 }
 
 #hero .actions a {
@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   padding: 8px 20px;
   border-radius: 2px;
-  transition: 0.3s;
+  transition: 0.1s;
   margin: 10px;
 }
 
@@ -494,7 +494,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-container {
   /*background: url(../img/about-img.jpg) left top no-repeat;*/
   background: url(../img/1_pic_Togetherness.jpg) left top no-repeat;
-  background-size: 500px;
+  background-size: 550px;
   /*background-size options at https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
 }
 
