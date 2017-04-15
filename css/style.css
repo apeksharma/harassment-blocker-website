@@ -88,8 +88,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   /*background: url(../img/hero-bg.jpg) top center fixed;*/
   background: url(../img/1_pic_sun_thru_clouds.jpg) top center fixed; 
-  /*background-size: cover;*/
-  background-size: auto;
+  background-size: cover;
+  /*background-size options at https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
 }
 
 #hero .hero-logo {
@@ -489,7 +489,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-container {
   /*background: url(../img/about-img.jpg) left top no-repeat;*/
   background: url(../img/1_pic_Togetherness.jpg) left /*top*/ no-repeat;
-  background-size: initial;
+  background-size: 250px;
 }
 
 #about .about-content {
