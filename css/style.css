@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   /*background: url(../img/hero-bg.jpg) top center fixed;*/
   background: url(../img/1_pic_sun_thru_clouds.jpg) top center fixed; 
   /*background-size: cover;*/
-  background-size: auto;
+  background-size: 500px 500px;
 }
 
 #hero .hero-logo {
