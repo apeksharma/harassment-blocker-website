@@ -127,7 +127,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   /*color: #999;*/
-  color: #e5e5e5;
+  /*color: #e5e5e5;*/
+  color: #fff;
   margin-bottom: 50px;
 }
 
@@ -492,7 +493,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-container {
   /*background: url(../img/about-img.jpg) left top no-repeat;*/
   background: url(../img/1_pic_Togetherness.jpg) left top no-repeat;
-  background-size: 475px;
+  background-size: 500px;
   /*background-size options at https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
 }
 
