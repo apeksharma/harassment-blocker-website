@@ -1,3 +1,4 @@
+<style type="text/css">
 svg {
   font-family: "Helvetica Neue", Helvetica;
 }
