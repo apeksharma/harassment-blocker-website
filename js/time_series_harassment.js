@@ -55,7 +55,7 @@ var area = d3.svg.area()
     .x(function(d) { return x(d.date); })
     .y1(function(d) { return y(d.price); });
 
-d3.csv("time_series_harassment.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/apeksharma/harassment-blocker-website/master/js/time_series_harassment.csv", function(data) {
   var parse = d3.time.format("%Y/%m/%d").parse;
   //console.log(parse)
   // Nest stock values by symbol.
