@@ -1,19 +1,3 @@
-<style type="text/css">
-svg {
-  font-family: "Helvetica Neue", Helvetica;
-}
-
-.line {
-  fill: none;
-  stroke: #000;
-  stroke-width: 2px;
-}
-
-</style>
-<body>
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script>
-
 var m = [20, 20, 30, 20],
     w = 960 - m[1] - m[3],
     h = 500 - m[0] - m[2];
@@ -572,5 +556,3 @@ function donutExplode() {
     lines();
   }, duration);
 }
-
-</script>
