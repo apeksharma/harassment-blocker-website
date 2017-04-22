@@ -237,17 +237,29 @@
           
           <p class="section-description">Results. . . 
           </p>
-          <center><img src="img/methods_pic3_models.png" style="width: 85%;max-height: 85%"></center>
-          
-          <center><img src="img/methods_pic3_precision.png" style="width: 85%;max-height: 85%"></center>
-          
-          <center><img src="img/methods_pic3_recall.png" style="width: 85%;max-height: 85%"></center>
-          
-          <center><img src="img/methods_pic3_accuracy.png" style="width: 85%;max-height: 85%"></center>
-          
-          <p class="section-description"></p>
-         
         </div>
+
+        <center><img src="img/methods_pic3_models.png" style="width: 85%;max-height: 85%"></center>
+        <center><img src="img/methods_pic3_precision.png" style="width: 85%;max-height: 85%"></center>
+        <center><img src="img/methods_pic3_recall.png" style="width: 85%;max-height: 85%"></center>
+        <center><img src="img/methods_pic3_accuracy.png" style="width: 85%;max-height: 85%"></center>
+        
+        var myIndex = 0;
+          carousel();
+
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+         
+        <p class="section-description"></p>
       </div>
       
       <div class="row">
