@@ -36,6 +36,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+svg {
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
 /* Prelaoder */
 #preloader {
   position: fixed;
