@@ -46,6 +46,9 @@ svg {
   stroke-width: 2px;
 }
 
+/* temp */
+.mySlides {display:none;}
+
 /* Prelaoder */
 #preloader {
   position: fixed;
