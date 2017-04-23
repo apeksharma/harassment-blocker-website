@@ -208,14 +208,14 @@ function carousel() {
   
   <script>  
   var images = [ "img/2_pic_humans_plus_worldview.png" ];
-  function changeImage(index) {
+  function changeImage2(index) {
     var x = document.getElementById("hero");
     x.style['background-image'] = "url(\"" + images[index] + "\")";
     var nextIndex = index + 1;
     if(nextIndex >= images.length) nextIndex = 0;
-    setTimeout(function() { changeImage(nextIndex); }, 2000);
+    setTimeout(function() { changeImage2(nextIndex); }, 2000);
     }
-    changeImage(0);  
+    changeImage2(0);  
   </script>
   
 <!--==========================
