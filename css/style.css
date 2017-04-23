@@ -891,3 +891,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: line;
 }
 
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
