@@ -506,7 +506,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container {
   /*background: url(../img/about-img.jpg) left top no-repeat;*/
-  background: url(../img/1_pic_Togetherness.jpg) left top no-repeat;
+  background: url(../img/1_pic_Togetherness_colored.png) left top no-repeat;
   background-size: 600px;
   /*background-size options at https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
 }
