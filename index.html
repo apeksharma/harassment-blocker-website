@@ -350,8 +350,8 @@ function carousel() {
             d3.max(regions, function(c) { return 1 })
           ]);
           */
-          
-          y.domain(d3.extent(data, function(d) { return d.violence; }));
+          /* recast data of regions */
+          y.domain(d3.extent(regions, function(d) { return d.violence; }));
 
           svg.append("g")
               .attr("class", "x axis")
