@@ -990,3 +990,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     opacity: 0.7;
 }
 
+.line:hover {
+  stroke-width: 7px;
+  stroke: yellow;
+  opacity: 1;
+}
