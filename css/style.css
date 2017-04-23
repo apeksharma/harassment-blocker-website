@@ -541,7 +541,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-
 #about {
   display: table;
   /* setting size of element, that the image will be contained within */
@@ -656,19 +655,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
-  margin-top: 120px;
+  margin-top: 160px;
 }
 
 #subscribe .subscribe-text {
   color: #fff;
   font-size: 28px;
-  margin-top: 120px;
+  margin-top: 200px;
 }
 
 #subscribe .subscribe-btn-container {
   text-align: center;
   font-size: 40px;
-  padding-top: 120px;
+  margin-top: 120px;
 }
 
 #subscribe .subscribe-btn {
