@@ -897,3 +897,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   stroke: #000;
   shape-rendering: crispEdges;
 }
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5;
+  stroke-opacity: .7;
+}
