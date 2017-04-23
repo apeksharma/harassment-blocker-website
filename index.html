@@ -320,7 +320,7 @@ function carousel() {
           .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        var parseDate = d3.time.format("%Y-%m-%d").parse;
+        var parseDate = d3.time.format("%m-%d-%Y").parse;
 
         d3.csv("js/time_series_harassment_wide.csv", function(error, data) {
 
