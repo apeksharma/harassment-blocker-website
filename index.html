@@ -292,6 +292,20 @@ function carousel() {
             width = 1300 - margin.left - margin.right,
             height = 800 - margin.top - margin.bottom;
 
+        var parseDate = d3.time.format("%Y").parse;
+          console.log(parseDate);
+
+        d3.csv("js/time_series_harassment_wide_temp.csv", function(error, data) {
+
+          if (error) throw error;
+          console.log(data)
+
+          color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+
+          data.forEach(function(d) {
+            d.date = parseDate(d.date);
+          });
+          
         var x = d3.time.scale()
             .range([0, width]);
 
@@ -320,19 +334,7 @@ function carousel() {
           .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        var parseDate = d3.time.format("%Y").parse;
-          console.log(parseDate);
-
-        d3.csv("js/time_series_harassment_wide_temp.csv", function(error, data) {
-
-          if (error) throw error;
-          console.log(data)
-
-          color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
-
-          data.forEach(function(d) {
-            d.date = parseDate(d.date);
-          });
+          /* previous location of parse date */
 
           var regions = color.domain().map(function(name) {
             return {
