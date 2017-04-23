@@ -904,3 +904,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   stroke-width: .5;
   stroke-opacity: .7;
 }
+
+.grid path {
+      stroke-width: 0;
+}
+
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
