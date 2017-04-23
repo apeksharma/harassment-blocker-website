@@ -661,7 +661,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe .subscribe-text {
   color: #fff;
-  font-size: 20px;
+  font-size: 28px;
   margin-top: 120px;
 }
 
@@ -682,7 +682,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 2px;
   transition: 0.5s;
   margin-top: 120px;
-  margin-right: 40px;
   border: 2px solid #fff;
   color: #fff;
 }
