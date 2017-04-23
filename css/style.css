@@ -556,7 +556,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .service-item {
-  margin-bottom: 20px;
+  margin-bottom: 50px /*20px*/;
 }
 
 #services .service-icon {
@@ -584,7 +584,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .service-title {
   margin-left: 80px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 50px /*15px*/;
   text-transform: uppercase;
   color: white;
 }
