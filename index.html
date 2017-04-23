@@ -299,11 +299,12 @@ function carousel() {
 
           if (error) throw error;
           console.log(data)
-
-          color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
-
+          
           data.forEach(function(d) {
             d.date = parseDate(d.date);
+            
+          color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+
           });
           
         var x = d3.time.scale()
