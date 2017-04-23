@@ -608,6 +608,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: white;
 }
 
+#services .services-text {
+  line-height: 26px;
+  text-align: left;
+}
+
 /* Subscribe Section
 --------------------------------*/
 #subscribe {
