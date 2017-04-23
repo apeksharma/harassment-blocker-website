@@ -102,7 +102,7 @@ svg {
   height: 80vh; /*100vh*/
   /*background: url(../img/hero-bg.jpg) top center fixed;*/
   background: url(../img/1_pic_sun_thru_clouds.jpg) top center fixed;
-  background-size: auto;
+  background-size: cover;
   background-color: #fff;
   /*background-size options at https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
 }
