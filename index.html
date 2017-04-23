@@ -96,12 +96,12 @@ function carousel() {
   var images = [ "img/1_pic_sun_thru_clouds.jpg", "img/1_pic_Togetherness.jpg" ];
   function changeImage(index) {
     var x = document.getElementById("hero");
-    x.style.background = "url(" + images[index] + ") top center fixed";
+    x.style['background-image'] = "url(\"" + images[index] + "\")";
     var nextIndex = index + 1;
     if(nextIndex >= images.length) nextIndex = 0;
     setTimeout(function() { changeImage(nextIndex); }, 2000);
-  }
-  changeImage(0);  
+    }
+    changeImage(0);  
   </script>
   
 <!--==========================
