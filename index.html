@@ -207,12 +207,12 @@ function carousel() {
   </section>
   
   <script>  
-  var images = [ "img/2_pic_humans_plus_worldview.png" ];
+  var images2 = [ "img/2_pic_humans_plus_worldview.png" ];
   function changeImage2(index) {
-    var x = document.getElementById("hero");
-    x.style['background-image'] = "url(\"" + images[index] + "\")";
+    var x2 = document.getElementById("hero");
+    x2.style['background-image'] = "url(\"" + images2[index] + "\")";
     var nextIndex = index + 1;
-    if(nextIndex >= images.length) nextIndex = 0;
+    if(nextIndex >= images2.length) nextIndex = 0;
     setTimeout(function() { changeImage2(nextIndex); }, 2000);
     }
     changeImage2(0);  
