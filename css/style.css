@@ -660,6 +660,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
+  margin-top: 40px;
 }
 
 #subscribe .subscribe-text {
@@ -668,7 +669,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe .subscribe-btn-container {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 #subscribe .subscribe-btn {
