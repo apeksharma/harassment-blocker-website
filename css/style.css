@@ -15,7 +15,7 @@ body {
 
 a {
   color: #03C4EB;
-  transition: 0.2s;
+  transition: 1s /*0.2s*/;
 }
 
 a:hover, a:active, a:focus {
