@@ -105,10 +105,6 @@ svg {
   background: url(../img/1_pic_sun_thru_clouds.jpg) top center fixed;
   background-size: cover;
   background-color: #fff;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
   /*background-size options at https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
 }
 
@@ -665,10 +661,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe .subscribe-text {
   color: #fff;
+  margin-top: 100px;
 }
 
 #subscribe .subscribe-btn-container {
   text-align: center;
+  font-size: 40px;
   padding-top: 100px;
 }
 
