@@ -351,7 +351,9 @@ function carousel() {
           ]);
           */
           /* recast data of regions */
-          y.domain(d3.extent(regions, function(d) { return d.violence; }));
+          /*y.domain(d3.extent(regions, function(d) { return d.violence; }));*/
+          y.domain([ d3.min(regions, function(d) { return d3.min(d.values, function(e) { return e.violence; })}),
+                     d3.max(regions, function(d) { return d3.max(d.values, function(e) { return e.violence; })}) ]);
 
           svg.append("g")
               .attr("class", "x axis")
