@@ -206,18 +206,6 @@ function carousel() {
     </div>  
   </section>
   
-  <script>  
-  var images2 = [ "img/2_pic_humans_plus_worldview.png" ];
-  function changeImage2(index) {
-    var x2 = document.getElementById("hero");
-    x2.style['background-image'] = "url(\"" + images2[index] + "\")";
-    var nextIndex = index + 1;
-    if(nextIndex >= images2.length) nextIndex = 0;
-    setTimeout(function() { changeImage2(nextIndex); }, 2000);
-    }
-    changeImage2(0);  
-  </script>
-  
 <!--==========================
   Subscribe Section
 ============================-->  
