@@ -48,13 +48,10 @@
 </head>
 
 <body>
-    
-  <img class="mySlides" src="img/1_pic_sun_thru_clouds.jpg" style="width:100%">
-  <img class="mySlides" src="img/1_pic_Togetherness.jpg" style="width:100%">
   
   <div id="preloader"></div>
-
-<script>
+  
+<!--
 var myIndex = 0;
 carousel();
 
@@ -69,13 +66,16 @@ function carousel() {
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
-</script>
- 
+--> 
+
+
 <!--==========================
   Hero Section
 ============================-->
   <section id="hero">
+
     <div class="hero-container">
+
       <div class="wow fadeIn">
         <div class="hero-logo">
           <!--<img class="" src="img/logo.png" alt="Imperial">-->
@@ -91,6 +91,18 @@ function carousel() {
       </div>
     </div>
   </section>
+  
+  <script>  
+  var images = [ "img/1_pic_sun_thru_clouds.jpg", "img/1_pic_Togetherness.jpg" ];
+  function changeImage(index) {
+    var x = document.getElementById("hero");
+    x.style.background = "url(" + images[index] + ") top center fixed";
+    var nextIndex = index + 1;
+    if(nextIndex >= images.length) nextIndex = 0;
+    setTimeout(function() { changeImage(nextIndex); }, 2000);
+  }
+  changeImage(0);  
+  </script>
   
 <!--==========================
   Header Section
