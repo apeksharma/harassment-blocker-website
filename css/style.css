@@ -538,6 +538,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-text {
   line-height: 26px;
   text-align: left;
+  font-size: 16px;
 }
 
 #about .about-text:last-child {
@@ -629,6 +630,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .services-text {
   line-height: 26px;
   text-align: left;
+  font-size: 16px;
 }
 
 /* Subscribe Section
