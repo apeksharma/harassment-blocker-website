@@ -344,10 +344,14 @@ function carousel() {
 
           x.domain(d3.extent(data, function(d) { return d.date; }));
 
+          /*
           y.domain([
             d3.min(regions, function(c) { return 0 }),
             d3.max(regions, function(c) { return 1 })
           ]);
+          */
+          
+          y.domain(d3.extent(data, function(d) { return d.violence; }));
 
           svg.append("g")
               .attr("class", "x axis")
