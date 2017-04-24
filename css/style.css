@@ -509,10 +509,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Get Started Section
 --------------------------------*/
-#about {
-  background: #fff;
-  padding: 80px 0;
-}
 
 #about .about-container {
   /*background: url(../img/about-img.jpg) left top no-repeat;*/
@@ -692,11 +688,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Portfolio Section
 --------------------------------*/
-
-#portfolio {
-  background: #fff;
-  padding: 80px 0;
-}
 
 #portfolio {
   display: table;
