@@ -689,18 +689,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 
+/*
 #portfolio {
   display: table;
-  /* setting size of element, that the image will be contained within */
   width: 100%;
-  height: 90vh; /*100vh*/
-  /*background: url(../img/hero-bg.jpg) top center fixed;*/
   background: url(../img/method_background.png) top center fixed;
   background-size: cover;
   background-color: #fff;
   color: white;
-  /*background-size options at https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
 }
+*/
 
 #portfolio .portfolio-item {
   background-position: center center;
