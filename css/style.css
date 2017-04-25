@@ -689,12 +689,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 
+/*
 #portfolio {
   background: #fff;
   padding: 80px 0;
 }
+*/
 
-/*
 #portfolio {
   display: table;
   width: 100%;
@@ -703,7 +704,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #fff;
   color: white;
 }
-*/
 
 #portfolio .portfolio-item {
   background-position: center center;
