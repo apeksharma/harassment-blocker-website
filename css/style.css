@@ -1045,13 +1045,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .chart text {
   fill: white;
-  font: 14px sans-serif;
+  font: 20px sans-serif;
   text-anchor: end;
 }
 
 .chart .label {
   fill: white;
-  font: 14px sans-serif;
+  font: 20px sans-serif;
   text-anchor: end;
 }
 
@@ -1084,7 +1084,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .line:hover {
   stroke-width: 7px;
-  stroke: yellow;
+  stroke: #3B9E7D;
   opacity: 1;
 }
 
@@ -1096,7 +1096,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .axis text {
-  font: 14px sans-serif;
+  font: 20px sans-serif;
   color: white;
 }
 
