@@ -421,7 +421,8 @@ function carousel() {
             region.append("path")
                 .attr("class", "line")
                 .attr("d", function(d) { return line(d.values); })
-                .style("stroke", function(d) { return color(d.name); })
+                .style("stroke", rgb(20, 224, 156)) /*#14e09c*/
+                /*.style("stroke", function(d) { return color(d.name); })*/
 
                 // append a title element for a tooltip
                 // give hint to browser, whether tooltip should be for path, bar, or any element displayed
