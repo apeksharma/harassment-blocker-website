@@ -380,13 +380,12 @@ function carousel() {
           <p class="portfolio-text">
             <br>
             <br>
-            By iteratively collecting more labeled data on gender harassment and non-harassment tweets, we could retrain our earliest baseline model on that data, improving its ability to classify new unlabeled tweets better. For instance, the earliest model predicted the tweet, “you deserve vagina cancer”, at only 50.6% probability of harassment. As the model learned further, it eventually predicted that tweet with 70%+ probability of harassment. A diagram of our "active learning" process is below.
+            By iteratively collecting more labeled data on gender harassment and non-harassment tweets, we could retrain our earliest baseline model on that data, improving its ability to classify new unlabeled tweets better. For instance, the earliest model predicted the tweet, “you deserve vagina cancer”, at only 50.6% probability of harassment. As the model learned further, it eventually predicted that tweet with 70%+ probability of harassment. "Active learning" process. . .
           </p>
           <center><img src="img/method_pic1_data_collection_transparent.png" style="width: 60%; max-height: 60%"></center> 
           <!--<h5>Source: <a href='https://en.wikipedia.org/wiki/Active_learning_(machine_learning) ' target="_blank">Active Learning (Machine Learning)</a></h5>-->
 
           <p class="portfolio-text">
-            <br>
             <br>
             <br>
             Data collection process. . . 
@@ -396,16 +395,20 @@ function carousel() {
            <p class="portfolio-text">
             <br>
             <br>
+            We chose three categories of models to explore: Gradient Boosting Decision Trees (GBDT), Feed Forward Neural Networks (FNN), and Logistic Regression (LR). Top performers of companies and /or Kaggle events use Gradient Boosting Decision Trees to build patented products or defeat competitors. Various forms of neural networks (e.g., feed forward, convolutional, recurrent, seq2seq) have shown the ability to outperform other models on text-based classification tasks. And logistic regression not only is relatively easier to implement but also has a track record of performance.
             <br>
-            Artificial intelligence process. . . 
+            <br>
+            Our artificial intelligence process. . . 
           </p>
           <center><img src="img/method_pic3_ensemble_diagram_transparent.png" style="width: 65%; max-height: 65%"></center>
           
           <p class="portfolio-text">
             <br>
             <br>
+            In addition to their performance, their diversity from each other is critical. Different models make different prediction mistakes on gender harassment. So, rather than taking a predicted probability of harassment from one model, it’s more reliable to take the average predicted probability of harassment across models. Different models can compensate for each other. For instance, two models might predict low probability of gender harassment, whereas six models might predict high probability of gender harassment).
             <br>
-            Articifical intelligence results. . .
+            <br>
+            We used an automated approach that viewed the results of thousands of combinations of models and returned the ones with the best results. Below is an exmaple of three separate combinations of AI models. The combination in the leftmost column is linked to our user-facing products: the Twitter Bot and Gender Harassment Tweets Blocker. Note, however, our robust approach allows flexibility to replace one ensemble with another ensemble, if users and stakeholders prefer.
           </p>
           <center><img src="img/method_pic3_models_reformatted.png" style="width: 80%;max-height: 80%"></center>
         
