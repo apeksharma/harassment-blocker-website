@@ -206,8 +206,9 @@ function carousel() {
        <p class="products-text">
         The <span style="font-weight: bold; font-size: 20px; color: #FF6347">Automated Twitter Bot</span> is the first of our products. This bot, disguised to appear as a young white male, is designed to detect gender harassment tweets and intervene by calling out the offensive language of the tweet in a reply to the offender. This product is designed with the intent to mitigate offensive and abusive online behavior right at the source.
         </p>
-        </div>
       </div>
+    </div>
+
     <div class="container about-container wow fadeInUp">
      <div class="row">
       <div class="col-sm-6"></div>
@@ -226,13 +227,115 @@ function carousel() {
         <br>
         <span style="font-weight: bold;font-size: 18px">Intervention</span>
         <br>
-        The method and message of intervention was informed by two studies. One is a study using <a href='http://www.rethinkwords.com/whatisrethink.com/' target="_blank">Rethink</a>, a software product designed to prevent adolescents from sending or posting hurtful messages. The second is an <a href='https://link.springer.com/article/10.1007/s11109-016-9373-5' target="_blank">NYU Field Experiment</a>, which addressed racial harassment on Twitter. Both studies found that checking offensive language with a simple message was effective. 
-      </p>
+        The method and message of intervention was informed by two studies. One is a study using <a href='http://www.rethinkwords.com/whatisrethink.com/' target="_blank">Rethink</a>, a software product designed to prevent adolescents from sending or posting hurtful messages. The second is an <a href='https://link.springer.com/article/10.1007/s11109-016-9373-5' target="_blank">NYU Field Experiment</a>, which addressed racial harassment on Twitter. Both studies found that checking offensive language with a simple message was effective.
        <!--<img src="img/bot-example.png" style="width:90%;height:90%;">-->
+       </p>
       </div>        
-      </div>
-    </div>
-  </section>
+     </div>
+     </div>
+       <p class="products-text">
+            <br>
+            <br>
+            <br>
+            <h3 style="color: #666666; text-align: center;">Working Bot</h3>
+            <div class="container about-container wow fadeInUp">
+             <div class="row">
+              <div class="col-sm-6"></div>
+              <div class="col-sm-6"></div>
+            <div class="col-md-4">
+             <!--<h3 style="text-align: center">Automated Twitter Bots</h3>-->
+             <p class="products-text" style="text-align: justify;">
+             Placeholder for Text
+             </p>
+             </div>
+            </p>
+
+            <div class="col-md-8 col-md-push-0 about-content">
+             <div class="slideshow-container">
+              <div class="mySlides fade">
+              <!--<div class="numbertext">1 / 6</div>-->
+              <center><img src="img/example1.png" style="max-height: 70vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>         
+
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">2 / 6</div>-->
+              <center><img src="img/example2.png" style="max-height: 70vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+             
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">3 / 6</div>-->
+              <center><img src="img/example3.png" style="max-height: 70vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">4 / 6</div> -->
+              <center><img src="img/example4.png" style="max-height: 70vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">5 / 6</div>-->
+              <center><img src="img/example5.png" style="max-height: 70vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">6 / 6</div>-->
+              <center><img src="img/example6.png" style="max-height: 70vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+            <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>  
+          </div>
+
+          <script type="text/javascript">
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1} 
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none"; 
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block"; 
+              dots[slideIndex-1].className += " active";
+            }
+          </script>
+
+          </div>
+        </div>
+    </section>
  
 <!--==========================
   Subscribe Section
