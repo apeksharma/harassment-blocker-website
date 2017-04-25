@@ -493,9 +493,9 @@ function carousel() {
             svg.append("g")
                 .attr("class", "x axis")
                 .attr("transform", "translate(0," + height + ")")
-                .call(xAxis)
-               .append("text")
-                .style("fill", "white");
+                .call(xAxis);
+               //.append("text")
+                //.style("fill", "white");
 
             svg.append("g")
                 .attr("class", "grid")
@@ -516,8 +516,8 @@ function carousel() {
                 .attr("y", 6)
                 .attr("dy", "1em")
                 .style("text-anchor", "right")
-                .style("fill", "white")
-                .text("Projected number of harassment tweets that our AI could have detected on Twitter's full dataset");
+                //.style("fill", "white")
+                .text("Projected number of harassment tweets that our AI could have detected on Twitter's full dataset (3/6/2017 - 4/16/2017)");
 
             var region = svg.selectAll(".region")
                 .data(regions)
