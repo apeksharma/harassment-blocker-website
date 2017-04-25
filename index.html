@@ -367,6 +367,13 @@ function carousel() {
             <br>
             <br>
             <br>
+            We used a form of <a href='https://en.wikipedia.org/wiki/Active_learning_(machine_learning) ' target="_blank">Active Learning (Machine Learning)</a> to collect enough tweets that humans such as our Mechanical Turk workers regard as gender harassment. That would allow our AI model to better learn what humans regard as gender harassment and non-harassment language, characters, and symbols, ultimately to make better probability predictions on gender harassment based on that learning.
+            <br>
+            We found roughly 0.04% (4 out of 10,000) tweets are harassment. That implies we would have needed to read through 10,000 tweets to find roughly 4 harassment ones. However, active learning (machine learning) helped us circumvent that obstacle. We first labeled1K tweets, then used our earliest baseline model (Logistic Regression) to output predicted probabilities on these and new tweets. Below is the initial table we presented to a data-science audience on 3/15/2017.
+          </p> 
+           <center><img src="img/method_pic0_active_learning.png" style="width: 60%; max-height: 60%"></center> 
+     
+          <p class="portfolio-text">
             Iterative process. . . 
           </p>
           <center><img src="img/method_pic1_data_collection_transparent.png" style="width: 60%; max-height: 60%"></center> 
