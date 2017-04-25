@@ -1050,7 +1050,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .axis path,
 .axis line {
   fill: none;
-  stroke: #000;
+  stroke: white /*#000*/;
   shape-rendering: crispEdges;
 }
 
