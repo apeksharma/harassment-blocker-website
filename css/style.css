@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #03C4EB;
+  color: #008080 /*#03C4EB*/;
   transition: 1s /*0.2s*/;
 }
 
