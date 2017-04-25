@@ -333,7 +333,7 @@ svg {
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #66C6A7 /*#03C4EB*/;
+  color: #37594E /*#66C6A7 #03C4EB*/;
 }
 
 .nav-menu ul {
