@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #008080 /*#03C4EB*/;
+  color: #14E09C /*#008080 #03C4EB*/;
   transition: 1s /*0.2s*/;
 }
 
@@ -333,7 +333,7 @@ svg {
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #008080 /*#66C6A7 #03C4EB*/;
+  color: #14E09C /*#008080 #66C6A7 #03C4EB*/;
 }
 
 .nav-menu ul {
@@ -502,7 +502,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title-divider {
   width: 50px;
   height: 3px;
-  background: #008080 /*#03C4EB*/;
+  background: #14E09C /*#008080 #03C4EB*/;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -751,8 +751,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe .subscribe-btn:hover {
-  background: #008080 /*#03C4EB*/;
-  border: 2px solid #008080 /*#03C4EB*/;
+  background: #14E09C /*#008080 #03C4EB*/;
+  border: 2px solid #14E09C /*#008080 #03C4EB*/;
 }
 
 /* Portfolio Section
