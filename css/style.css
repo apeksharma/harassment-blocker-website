@@ -1038,6 +1038,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ccc;
 }
 
+/*--------------------------------------------------------------
+# D3.js css formats
+--------------------------------------------------------------*/
+
 .x.axis path {
   display: line;
 }
@@ -1057,7 +1061,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .grid path {
-      stroke-width: 0;
+      stroke-width: 2;
 }
 
 .grid .tick {
