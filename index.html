@@ -366,7 +366,6 @@ function carousel() {
           <p class="portfolio-text">
             <br>
             <br>
-            <br>
             We used a form of active learning (machine learning) to collect enough tweets that humans such as Mechanical Turk workers and us regard as gender harassment. That allowed our AI model to better learn what humans regard as gender harassment and non-harassment language, characters, and symbols, iteratively making better probability predictions on gender harassment based on that learning.
             <br>
             <br>
@@ -395,7 +394,7 @@ function carousel() {
            <p class="portfolio-text">
             <br>
             <br>
-            We chose three categories of models to explore: Gradient Boosting Decision Trees (GBDT), Feed Forward Neural Networks (FNN), and Logistic Regression (LR). Top performers of companies and /or Kaggle events use Gradient Boosting Decision Trees to build patented products or defeat competitors. Various forms of neural networks (e.g., feed forward, convolutional, recurrent, seq2seq) have shown the ability to outperform other models on text-based classification tasks. And logistic regression not only is relatively easier to implement but also has a track record of performance.
+            We chose to leverage and tune three categories of models: Gradient Boosting Decision Trees (GBDT), Feed Forward Neural Networks (FNN), and Logistic Regression (LR). Top performers of companies and /or Kaggle competitions use Gradient Boosting Decision Trees to build patented products or win. Various forms of neural networks (e.g., feed forward, convolutional, recurrent) have shown the ability to outperform other models on text-based classification tasks. And logistic regression not only is relatively easier to implement but also has a track record of performance.
             <br>
             <br>
             Our artificial intelligence process. . . 
@@ -405,15 +404,18 @@ function carousel() {
           <p class="portfolio-text">
             <br>
             <br>
-            In addition to their performance, their diversity from each other is critical. Different models make different prediction mistakes on gender harassment. So, rather than taking a predicted probability of harassment from one model, it’s more reliable to take the average predicted probability of harassment across models. Different models can compensate for each other. For instance, two models might predict low probability of gender harassment, whereas six models might predict high probability of gender harassment).
+            Rather than taking a predicted probability of harassment from one model, it’s superior to take the average predicted probability of harassment across models. Different models can compensate for each other and, at the same time, can compensate for each other. For instance, two models might predict low probability (incorrectly) of gender harassment for specific tweets, whereas six models might predict high probability (correctly) of gender harassment for those same tweets. Our model categories' diversity from each other is critical for that reason.
             <br>
-            <br>
-            We used an automated approach that viewed the results of thousands of combinations of models and returned the ones with the best results. Below is an exmaple of three separate combinations of AI models. The combination in the leftmost column is linked to our user-facing products: the Twitter Bot and Gender Harassment Tweets Blocker. Note, however, our robust approach allows flexibility to replace one ensemble with another ensemble, if users and stakeholders prefer.
+            We used an automated approach that viewed the results of thousands of combinations of models and returned the ones with the best results. The graph below shows three of our separate combinations of AI models. The combination in the leftmost column is linked to our user-facing products: the Twitter Bot and Gender Harassment Tweets Blocker. Note, our robust approach allows flexibility to replace one ensemble with another ensemble, if users and stakeholders prefer.
           </p>
           <center><img src="img/method_pic3_models_reformatted.png" style="width: 80%;max-height: 80%"></center>
         
           <p class="portfolio-text">
             <br>
+            <br>
+            As we collect more labeled tweet data via various channels, our ensemble of models should improve even further. [Technical Terms: We purposely chose to analyze words, not characters, due to our sample size. Otherwise, with vectorizer analyzer="char" and n_grams=(1,4), some of our models achieved 95%+ precision and 50% recall. However, GBDT feature importances reveal some single characters such as "'" took too much importance. So, to be fair and reasonable, we selected models for production that should generalize within the entire tweets universe. As you saw above, we built a sampling distribution to show not only our means, but our standard errors.]
+            </p>
+          <p class="portfolio-text">
             <br>
             <br>
             Allocation of predicted gender harassment probabilities across a sample of 46.2M tweets. . .
@@ -421,7 +423,6 @@ function carousel() {
           <center><img src="img/method_pic3_distribution.png" style="width: 80%;max-height: 80%"></center>
         
           <p class="portfolio-text">
-            <br>
             <br>
             <br>
           </p>
