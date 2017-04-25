@@ -1095,11 +1095,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   opacity: 0.5;
 }
 
-.axis text {
-  font: 16px sans-serif;
-  color: white;
-}
-
 /*--------------------------------------------------------------
 # End D3.js css formats
 --------------------------------------------------------------*/
