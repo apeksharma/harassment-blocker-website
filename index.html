@@ -413,7 +413,10 @@ function carousel() {
           <p class="portfolio-text">
             <br>
             <br>
-            As we collect more labeled tweet data via various channels, our ensemble of models should improve even further. [Technical Terms: We purposely chose to analyze words, not characters, due to our sample size. Otherwise, with vectorizer analyzer="char" and n_grams=(1,4), some of our models achieved 95%+ precision and 50% recall. However, GBDT feature importances reveal some single characters such as "'" took too much importance. So, to be fair and reasonable, we selected models for production that should generalize within the entire tweets universe. As you saw above, we built a sampling distribution to show not only our means, but our standard errors.]
+            As we collect more labeled tweet data via various channels, including in an automated way through our Gender Harassment Tweet Blocker, our ensemble of models should improve even further. 
+            <br>
+            <br>
+            [Technical Language (Optional): We built final models that analyzed words, not characters, based on our 18.K sample size. With roughly 1M sample size, for instance, we would leverage vectorizer "analyzer='char'" and random search across "n_grams=(1,4)". Some of our initial GBDT models achieved 95%+ precision and 80% recall. However, their feature importances revealed some single characters such as "'" took too much importance in the predicted probability of harassment. So, to acknowledge the size of our dataset and be fair, we selected models for production (with results not as strong) but that should be more generalize to the tweets universe. As you saw above, we built a sampling distribution to show not only our means, but our standard errors.]
             </p>
           <p class="portfolio-text">
             <br>
