@@ -1040,8 +1040,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# D3.js css formats
+# Start D3.js css formats
 --------------------------------------------------------------*/
+
+.chart text {
+  fill: white;
+  font: 14px sans-serif;
+  text-anchor: end;
+}
+
+.chart .label {
+  fill: white;
+  font: 14px sans-serif;
+  text-anchor: end;
+}
 
 .x.axis path {
   display: line;
@@ -1088,6 +1100,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: white;
 }
 
+/*--------------------------------------------------------------
+# End D3.js css formats
+--------------------------------------------------------------*/
 
 /* Slides Navigation*/
 * {box-sizing:border-box}
