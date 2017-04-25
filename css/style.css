@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #14E09C /*#008080 #03C4EB*/;
+  color: #D4AF37 /*#14E09C #008080 #03C4EB*/;
   transition: 1s /*0.2s*/;
 }
 
@@ -333,7 +333,7 @@ svg {
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #14E09C /*#008080 #66C6A7 #03C4EB*/;
+  color: #D4AF37 /*#14E09C #008080 #66C6A7 #03C4EB*/;
 }
 
 .nav-menu ul {
@@ -751,7 +751,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe .subscribe-btn:hover {
-  background: #14E09C /*#008080 #03C4EB*/;
+  background: #D4AF37 /*#14E09C #008080 #03C4EB*/;
   border: 2px solid #14E09C /*#008080 #03C4EB*/;
 }
 
