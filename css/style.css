@@ -667,6 +667,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #666666;
   font-size: 14px;
   line-height: 20px;
+  margin-top: 10px;
 }
 
 #products .products-btn-container {
@@ -1106,7 +1107,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin-top: 10px;
 }
 
 .mySlides {
