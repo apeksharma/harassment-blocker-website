@@ -203,26 +203,28 @@ function carousel() {
     <div class="container wow fadeInUp">
       <div class="row">
        <h3 class="products-title" style="text-align: center">OUR PRODUCTS</h3>
-       <p class="products-text">
-        The <span style="font-weight: bold; font-size: 20px; color: #FF6347">Automated Twitter Bot</span> is the first of our products. This bot, disguised to appear as a young white male, is designed to detect gender harassment tweets and intervene by calling out the offensive language of the tweet in a reply to the offender. This product is designed with the intent to mitigate offensive and abusive online behavior right at the source.
-       </p>
+       <div class="col-md-6 col-md-push-3 about-content">
+        <p class="products-text">
+        The <span style="font-weight: bold; font-size: 20px; color: #FF6347">Automated Twitter Bot</span> is the first of our products. This bot, disguised to appear as a young white male, is designed to detect gender harassment tweets and intervene by calling out the offensive language of the tweet in a reply to the offender. This product is designed with the intent to mitigate abusive online behavior right at the source.
+        </p>
       </div>
+    </div>
     </div>
 
     <div class="container about-container wow fadeInUp">
      <div class="row">
       <div class="col-sm-6"></div>
       <div class="col-sm-6"></div>
-      <div class="col-md-7">
+      <div class="col-md-6 col-md-push-1">
        <!--<h3 style="text-align: center">Automated Twitter Bots</h3>-->
-       <img src="img/mike-bot.png" align = "left" style="width: 100%;max-height: 90%">
+       <img src="img/mike-bot.png" align = "left" style= "max-height:60vh">
       </div>
-      <div class="col-md-5 col-md-push-0 about-content">
-       <p class="products-text2" style="text-align: justify;">
+      <div class="col-md-4 col-md-push-1 about-content">
+       <p class="products-text2" style="text-align: justify; font-size: 14px">
        <!--<h3 style="text-align: center">How it Works</h3>-->
         <span style="font-weight: bold;font-size: 18px">Detection</span>
         <br>
-        The AI behind the bot detects gender harassment tweets using an <span style="font-weight: bold"> ensemble of eight models:</span> <span style="color: #FF6347">Five Logistic Regression, Two Neural Nets, and One Gradient Boosting Decision Tree</span>. The threshold for detection is set at 0.7. This threshold was selected through a rigorous process of labelling and analyzing almost 20,000 tweets for language specifically indicative of gender harassment.
+        The AI behind the bot detects gender harassment tweets using an <span style="font-weight: bold"> ensemble of eight models:</span> <span style="color: #FF6347">Five Gradient Boosting Decision Trees (GDBT), Two Feed Forward Neural Networks (FNN), and One Logistic Regression (LR)</span>. Tweets are classified based on the average predicted probability of harassment across these models. Our default probability threshold is set at 70%. This threshold was defined through the rigorous process of analyzing almost 20,000 tweets for language specifically indicative of gender harassment.
         <br>
         <br>
         <span style="font-weight: bold;font-size: 18px">Intervention</span>
@@ -237,38 +239,38 @@ function carousel() {
             <br>
             <br>
             <br>
-    </p>
-            <h3 style="color: #666666; text-align: center;">Working Bot</h3>
+          </p>
+            <h3 style="color: #666666; text-align: center; font-weight: bold;">BOT AT WORK</h3>
             <div class="container about-container wow fadeInUp">
              <div class="row">
-              <div class="col-sm-6"></div>
-              <div class="col-sm-6"></div>
-            <div class="col-md-5">
+             <div class="col-sm-6"></div>
+             <div class="col-sm-6"></div>
+             <div class="col-md-5 col-md-push-1">
              <!--<h3 style="text-align: center">Automated Twitter Bots</h3>-->
-             <p class="products-text2" style="text-align: center;">
-             Placeholder for Text
-              </p>
-              </div>
+             <p class="products-text2" style="text-align: left; text-align: justify; font-size: 15px; margin-top: 6px">
+             <br>Online violence is real violence. It is a harmful manifestation of gender discrimination and inequality that exists both online and offline.<span style="color: #FF6347"> Such behavior often goes unchecked online, and offenders face very little to no consequences for their actions.</span> At the same time, it restricts the right of women to free and full participation, their freedom of expression, as well as their right to safety and privacy.<br><br><br> A <a href='https://psmag.com/why-women-aren-t-welcome-on-the-internet-aa21fdbc8d6#.vniezikge' target="_blank">study</a> found that accounts with feminine usernames received an average of 100 sexually explicit or threatening messages a day. In contrast, masculine names received only 3.7. More unfortunately, online behavior often dictates what occurs offline. In a 2012 <a href='http://time.com/3305466/male-female-harassment-online/' target="_blank">survey</a>, 89 percent of local domestic violence programs reported that victims were experiencing intimidation and threats by abusers via technology.<br><br><br><br><span style="font-size: 12px ;text-align:center"><i> On the right, you can scroll through to see some of the harassment tweets (from a live stream at the time) flagged by our bots. The bots responded to offender replies as well as retweets.</i></span>
+             </p>
+             </div>
 
-            <div class="col-md-7 col-md-push-0 about-content">
+            <div class="col-md-5 col-md-push-1 about-content">
+            <span style="font-size: 12px; text-align: right; color: #222">(Names and parts of some messages have been blacked out for privacy reasons)</span>
+              
              <div class="slideshow-container">
               <div class="mySlides fade">
               <!--<div class="numbertext">1 / 6</div>-->
-              <center><img src="img/example1.png" style="max-height: 65vh"></center>
+              <center><img src="img/example1.png" style="max-height: 65vh"><</center>
               <!-- <div class="text">Caption Text</div>-->
               </div>         
 
-
               <div class="mySlides fade">
               <!--<div class="numbertext">2 / 6</div>-->
-              <center><img src="img/example2.png" style="max-height: 65vh"></center>
+              <center><img src="img/example3.png" style="max-height: 65vh"></center>
               <!-- <div class="text">Caption Text</div>-->
               </div>
              
-
               <div class="mySlides fade">
               <!--<div class="numbertext">3 / 6</div>-->
-              <center><img src="img/example3.png" style="max-height: 65vh"></center>
+              <center><img src="img/example2.png" style="max-height: 65vh"></center>
               <!-- <div class="text">Caption Text</div>-->
               </div>
 
@@ -293,16 +295,15 @@ function carousel() {
             <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
           </div>
-          <br>
-
-          <div style="text-align:center">
+           
+           <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>  
-          </div>
+            </div>
 
           <script type="text/javascript">
             var slideIndex = 1;
@@ -335,7 +336,12 @@ function carousel() {
 
           </div>
         </div>
-    <p class="products-text"><br><br></p>
+      </div>
+      <p class="products-text">
+      <br>
+      <br>
+      test
+      </p>
     </section>
  
 <!--==========================
