@@ -1211,3 +1211,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   from {opacity: 1} 
   to {opacity: 1}
 }
+
+td {
+    text-decoration: underline;
+}
