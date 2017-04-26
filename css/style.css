@@ -918,7 +918,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .pic img {
-  max-width: 100%;
+  max-width: 75%;
 }
 
 #team .member h4 {
