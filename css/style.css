@@ -903,7 +903,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #team {
   background: #fff;
-  padding: 80px 0 60px 0;
+  padding: 100px 80px 0;
 }
 
 #team .member {
@@ -914,11 +914,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
-  height: 260px;
+  height: 230px;
 }
 
 #team .member .pic img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 #team .member h4 {
@@ -929,7 +929,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member span {
   font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #team .member .social {
