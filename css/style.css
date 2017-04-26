@@ -907,18 +907,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member {
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 #team .member .pic {
-  margin-bottom: 2px;
+  margin-bottom: 15px;
   overflow: hidden;
-  height: 200px;
+  height: 260px;
 }
 
 #team .member .pic img {
-  max-width: 75%;
+  max-width: 100%;
 }
 
 #team .member h4 {
@@ -929,7 +929,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member span {
   font-style: italic;
   display: block;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #team .member .social {
@@ -945,9 +945,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social i {
-  font-size: 24px;
+  font-size: 18px;
   margin: 0 2px;
 }
+
 
 /* Contact Section
 --------------------------------*/
