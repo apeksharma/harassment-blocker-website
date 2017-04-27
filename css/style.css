@@ -1121,10 +1121,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  /*position: relative;
-  margin-top: 8px;*/
-  margin-bottom: 1px;
+  max-width: 1200px;
+  position: relative;
+  margin-top: 10px;
 }
 
 .mySlides {
