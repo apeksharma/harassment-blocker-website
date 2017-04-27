@@ -669,7 +669,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #666666;
   font-size: 18px;
   margin-top: 5px;
-  line-height: 26px;
+  /*--line-height: 26px;*/
   text-align: justify;
 }
 
