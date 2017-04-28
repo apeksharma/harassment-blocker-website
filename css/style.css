@@ -918,16 +918,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #team {
   background: #fff;
-  padding: 80px 0 60px 0;
+  padding: 0 0 0 0;
 }
 
 #team .member {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 #team .member .pic {
-  margin-bottom: 15px;
+  margin-bottom: 2px;
   overflow: hidden;
   height: 260px;
 }
@@ -943,12 +943,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member span {
   font-style: italic;
-  display: block;
+  display: inline-block;
   font-size: 13px;
 }
 
 #team .member .social {
   margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 #team .member .social a {
@@ -963,7 +964,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   margin: 0 2px;
 }
-
 
 /* Contact Section
 --------------------------------*/
@@ -1202,12 +1202,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 0}
 }
 
 @keyframes fade {
-  from {opacity: 1} 
+  from {opacity: 1}
   to {opacity: 1}
 }
 
