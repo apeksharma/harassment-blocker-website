@@ -15,6 +15,7 @@ body {
 
 a {
   color: #008080 /*#D4AF37 #14E09C #03C4EB*/;
+  text-decoration: underline;
   transition: 1s /*0.2s*/;
 }
 
@@ -335,7 +336,7 @@ svg {
 /* Nav Meu Styling */
 .nav-menu a {
   padding: 10px 15px;
-  text-decoration: underline;
+  text-decoration: none;
   display: inline-block;
   color: #fff;
   font-family: 'Raleway', sans-serif;
