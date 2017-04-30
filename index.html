@@ -419,7 +419,7 @@ function carousel() {
             We used active learning (machine learning) to collect enough tweets (dated 2017 and earlier) that humans such as Mechanical Turk women workers regard as gender harassment. That allowed our AI model to better learn and predict what humans regard as gender harassment language and symbols.
             <br>
             <br>
-            We found roughly 0.04% (4 out of 10,000) tweets are harassment. That implies one approach to read through 10,000 tweets to find roughly 4 harassment ones. However, active learning (machine learning) helped us circumvent that obstacle. We first labeled 1K tweets via various methods (e.g., Twitter live stream, Twitter keyword searches, articles on harassment tweets), then used our earliest baseline model (Logistic Regression) to output predicted probabilities on those tweets and new tweets. Below are actual tweets we presented to an initial audience on 3/15/2017.
+            We found roughly 0.04% (4 out of 10,000) tweets are harassment. That implies one approach to read through 10,000 tweets to find roughly 4 harassment ones. However, active learning (machine learning) helped us circumvent that obstacle. We first labeled 1K tweets via various methods (e.g., Twitter live stream, Twitter keyword searches, articles on harassment tweets), then used our earliest baseline model (Logistic Regression) to output predicted probabilities on the tweets, before starting active learning. Below are actual tweets we presented to an initial audience on 3/15/2017.
             <br>
             <br>
             <b>[If you prefer not to read what many regard as highly offensive / misogynistic tweets, please bypass the table and subsequent text below, and jump to the next circular diagram.]</b>
@@ -429,7 +429,7 @@ function carousel() {
           <p class="portfolio-text">
             <br>
             <br>
-            While iteratively moving back and forth between data collection and machine learning, we retrained our earliest baseline model on that data, improving its ability to predict probability of harassment on past labeled tweets and new unlabeled tweets. For instance, our earliest model predicted the tweet, “you deserve vagina cancer”, at only 50.6% probability of harassment. As the model learned further, it eventually predicted that tweet with 70%+ probability of harassment. Our "active learning" process. . .
+            Then through active learning -- iteratively moving back and forth between data collection and machine learning -- we retrained our earliest baseline model on that data, improving its ability to predict probability of harassment on past labeled tweets and new unlabeled tweets. For instance, our earliest model predicted the tweet, “you deserve vagina cancer”, at only 50.6% probability of harassment. As the model learned further, it eventually predicted that tweet with 70%+ probability of harassment. Our active learning process. . .
           </p>
           <center><img src="img/method_pic1_data_collection_transparent.png" style="width: 60%; max-height: 60%"></center>
           <!--<h5>Source: <a href='https://en.wikipedia.org/wiki/Active_learning_(machine_learning) ' target="_blank">Active Learning (Machine Learning)</a></h5>-->
