@@ -462,18 +462,18 @@ function carousel() {
             [Technical Language (Optional): Our final models analyze words, not characters, despite our preference for some models in our ensemble to analyze characters. For instance, we initially analyzed characters, too, leveraging vectorizer "analyzer='char'" with random search across "n_grams=(1,4)". Some of our initial GBDT models achieved 95%+ precision and 80% recall. However, GDBT feature importances revealed some single characters such as " ' " took too much importance in the predicted probability of harassment, despite limited occurrences. So, we concluded a larger dataset than 18.8K seems necessary to analyze characters. To be fair and reasonable, we selected not models with better results but models that both perform well and should generalize to new tweets in the Twitter universe. As revealed in the graph above, we built a sampling distribution to show not only our averages, but our standard errors around those averages. The small standard errors indicate the ensemble's consistent performance on 15 cross-validation samples of 6K+ tweets. 15 samples were derived from randomization of seed 5 iterations and, within each iteration, 3-fold cross-validation.]
             </p>
           <p class="portfolio-text">
-            Our combination of 8 models (5 GBDTs, 2 FNNs, and 1 LR) predicted gender harassment probabilities across a sample of 46.2M tweets. . .
+            Our combination of 8 models (5 GBDTs, 2 FNNs, and 1 LR) yielded gender harassment probabilities across a sample of 46.2M tweets. . .
           </p>
           <center><img src="img/method_pic3_distribution.png" style="width: 80%;max-height: 80%"></center>
 
           <p class="portfolio-text">
             <br>
             <br>
-            If users collectively tweet an average of 500 million times a day (<a href='http://www.dsayce.com/social-media/tweets-day/' style="color: white" target="_blank"><td>David Sayce, November 2016</td></a>; <a href='http://www.businessinsider.com/twitter-tweets-per-day-appears-to-have-stalled-2015-6' style="color: white" target="_blank"><td>Business Insider, June 2015</td></a>), our products (if scaled) could have not only detected but acted over 1.17 million tweets per week. In full transparency, that also means our products could have incorrectly flagged about 330,000 tweets per week. However, the AI underlying our Twitter Bot and Gender Harassment Tweets Blocker can allow more correct predictions currently (if exchanged for lower detection rates of harassment tweets). For instance, users of the Gender Harassment Tweets Blocker can change the default of 0.70 (70% predicted probability of harassment) to .85 (85% predicted probability of harassment) to have less tweets incorrectly flagged as gender harassment.
+            If users collectively tweet an average of 500 million times a day (<a href='http://www.dsayce.com/social-media/tweets-day/' style="color: white" target="_blank"><td>David Sayce, November 2016</td></a>; <a href='http://www.businessinsider.com/twitter-tweets-per-day-appears-to-have-stalled-2015-6' style="color: white" target="_blank"><td>Business Insider, June 2015</td></a>), our products (if scaled) could have not only detected but acted over 1.17 million tweets per week. In full transparency, that also means our products could have incorrectly flagged about 330,000 tweets per week. However, the AI underlying our Twitter Bot and Gender Harassment Tweets Blocker can allow more correct predictions currently (if exchanged for lower detection rates of harassment tweets). For instance, users of the Gender Harassment Tweets Blocker can change the default of 0.70 (hiding tweets with a 70%+ chance of harassment) to 0.85 (hiding tweets with an 85%+ chance of harassment) to have less tweets incorrectly flagged as gender harassment.
             <br>
             <br>
             Projected number of harassment tweets that our AI could have detected on Twitter's full dataset (3/6/2017 - 4/16/2017)
-            The horizontal green line refects the projected daily average of 168K harassment tweets across the 6-week timeframe
+            The horizontal green line refects the projected average of 168K harassment tweets a day across the 6-week timeframe
           </p>
         </div>
 
