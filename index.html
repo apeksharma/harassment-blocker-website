@@ -430,7 +430,7 @@ function carousel() {
           <p class="portfolio-text">
             <br>
             <br>
-            With active learning -- iteratively moving back and forth between data collection and machine learning -- we retrained our earliest baseline model on that data, improving its ability to predict probability of harassment on past labeled tweets and new unlabeled tweets. For instance, our earliest model predicted the tweet, “you deserve vagina cancer”, at only 50.6% probability of harassment. As the model learned further, it eventually predicted that tweet with 70%+ probability of harassment. Our active learning process. . .
+            With active learning -- iteratively moving back and forth between data collection and machine learning -- we retrained our earliest baseline model, improving its ability to predict probability of harassment on past labeled tweets and new unlabeled tweets. For instance, our earliest model predicted the tweet, “you deserve vagina cancer”, at only 50.6% probability of harassment. As the model learned further, it eventually predicted that tweet with 70%+ probability of harassment. Our active learning process. . .
           </p>
           <center><img src="img/method_pic1_data_collection_transparent.png" style="width: 60%; max-height: 60%"></center>
           <!--<h5>Source: <a href='https://en.wikipedia.org/wiki/Active_learning_(machine_learning) ' target="_blank">Active Learning (Machine Learning)</a></h5>-->
@@ -460,7 +460,7 @@ function carousel() {
             Rather than taking a tweet's predicted probability of harassment from one model, it’s more reliable to take a tweet's average predicted probability of harassment across multiple models. Different models can make different prediction mistakes on harassment tweets, but can also compensate for each other. For instance, for specific tweets, two models might predict low probability of gender harassment incorrectly, whereas six models might predict high probability of gender harassment correctly.
             <br>
             <br>
-            We used an automated approach that viewed the results of thousands of ensembles (where ensemble refers to combinations of models). The graph below shows three separate combinations of our AI models. Each column reflects one combination of our AI models. The combination in the leftmost column is tied to our user-facing products: the Twitter Bot and Gender Harassment Tweets Blocker. Note, our flexibile approach allows replacement of one ensemble with another ensemble, if users and stakeholders prefer different performance.
+            We used an automated approach that viewed the results of thousands of ensembles (where ensemble refers to combinations of models). The graph below shows three separate combinations of our AI models. Each column reflects one combination of our AI models. The combination in the leftmost column is tied to our user-facing products: the Twitter Bot and Gender Harassment Tweets Blocker. Note, our flexibile approach allows replacement of one ensemble with another ensemble, if users and stakeholders prefer different performance. [Technical language (Optional): The final ensembles were eventually retrained on all labeled data (train + validation + test data) to increase performance on unlabeled data.]
           </p>
           <center><img src="img/method_pic3_models_reformatted.png" style="width: 80%;max-height: 80%"></center>
 
