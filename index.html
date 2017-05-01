@@ -430,7 +430,7 @@ function carousel() {
           <p class="portfolio-text">
             <br>
             <br>
-            Then with the cycle of active learning -- iteratively moving back and forth between data collection and machine learning -- we retrained our earliest baseline model on that data, improving its ability to predict probability of harassment on past labeled tweets and new unlabeled tweets. For instance, our earliest model predicted the tweet, “you deserve vagina cancer”, at only 50.6% probability of harassment. As the model learned further, it eventually predicted that tweet with 70%+ probability of harassment. Our active learning process. . .
+            With active learning -- iteratively moving back and forth between data collection and machine learning -- we retrained our earliest baseline model on that data, improving its ability to predict probability of harassment on past labeled tweets and new unlabeled tweets. For instance, our earliest model predicted the tweet, “you deserve vagina cancer”, at only 50.6% probability of harassment. As the model learned further, it eventually predicted that tweet with 70%+ probability of harassment. Our active learning process. . .
           </p>
           <center><img src="img/method_pic1_data_collection_transparent.png" style="width: 60%; max-height: 60%"></center>
           <!--<h5>Source: <a href='https://en.wikipedia.org/wiki/Active_learning_(machine_learning) ' target="_blank">Active Learning (Machine Learning)</a></h5>-->
@@ -448,7 +448,7 @@ function carousel() {
             Our artificial intelligence process. . .
             <br>
             <br>
-            We chose to leverage and tune three categories of models: Gradient Boosting Decision Trees (GBDT), Feed Forward Neural Networks (FNN), and Logistic Regression (LR). GBDT is used for world-class performance at companies that build patented products and in Kaggle competitions. Various neural networks (e.g., feed forward, convolutional, recurrent) have shown the abilities to outperform many other models on text-based prediction tasks. And LR is relatively easy to implement with a track record of performance.
+            We chose to leverage and tune three categories of models: Gradient Boosting Decision Trees (GBDT), Feed Forward Neural Networks (FNN), and Logistic Regression (LR).
             <br>
             <br>
           </p>
@@ -457,20 +457,20 @@ function carousel() {
           <p class="portfolio-text">
             <br>
             <br>
-            Rather than taking a tweet's predicted probability of harassment from one model, it’s more reliable to take a tweet's average predicted probability of harassment across multiple models. Different models can make different prediction mistakes on harassment tweets, but also can compensate for each other. For instance, for specific tweets, two models might predict low probability of gender harassment incorrectly, whereas six models might predict high probability of gender harassment correctly.
+            Rather than taking a tweet's predicted probability of harassment from one model, it’s more reliable to take a tweet's average predicted probability of harassment across multiple models. Different models can make different prediction mistakes on harassment tweets, but can also compensate for each other. For instance, for specific tweets, two models might predict low probability of gender harassment incorrectly, whereas six models might predict high probability of gender harassment correctly.
             <br>
             <br>
-            We used an automated approach that viewed the results of thousands of ensembles (or combinations of models). The graph below shows three separate combinations of our AI models. Each column reflects one combination of our AI models. The combination in the leftmost column is tied to our user-facing products: the Twitter Bot and Gender Harassment Tweets Blocker. Note, our robust approach allows flexibility to replace one ensemble with another ensemble, if users and stakeholders prefer.
+            We used an automated approach that viewed the results of thousands of ensembles (where ensemble refers to combinations of models). The graph below shows three separate combinations of our AI models. Each column reflects one combination of our AI models. The combination in the leftmost column is tied to our user-facing products: the Twitter Bot and Gender Harassment Tweets Blocker. Note, our flexibile approach allows replacement of one ensemble with another ensemble, if users and stakeholders prefer different performance.
           </p>
           <center><img src="img/method_pic3_models_reformatted.png" style="width: 80%;max-height: 80%"></center>
 
           <p class="portfolio-text">
             <br>
             <br>
-            As we collect more labeled tweet data via various channels, including the Gender Harassment Tweets Blocker, our ensemble of models should improve even further.
+            As we collect more labeled tweets via various channels, including the Gender Harassment Tweets Blocker, our ensemble of models should improve even further.
             <br>
             <br>
-            [Technical Language (Optional): Our final models analyze words, not characters, despite our preference for some models in our ensemble to analyze characters. For instance, we initially analyzed characters, too, leveraging vectorizer "analyzer='char'" with random search across "ngram_range=(1,4)". Some of our initial GBDT models achieved 95%+ precision and 80% recall. However, GDBT feature importances revealed some single characters such as " ' " took too much importance in the predicted probability of harassment, despite limited occurrences. So, we concluded a larger dataset than 18.8K seems necessary to analyze characters. To be fair and reasonable, we selected not ensembles with better results but ensembles that both perform well and should generalize to new tweets in the Twitter universe. As revealed in the graph above, we built a sampling distribution to show not only our averages, but our standard errors around those averages. The small standard errors indicate the ensemble's consistent performance on 15 cross-validation samples of 6K+ tweets. 15 samples were derived from randomizing seed for 5 iterations and, within each iteration, implementing 3-fold cross-validation.]
+            [Technical Language (Optional): Our final models analyze words, not characters, despite our preference for some models in our ensemble to analyze characters. For instance, we initially analyzed characters as well, leveraging vectorizer "analyzer='char'" with random search across "ngram_range=(1,4)". Some of our initial GBDT models achieved 95%+ precision and 80% recall. However, GDBT feature importances revealed some single characters such as " ' " took too much importance in the predicted probability of harassment, despite limited occurrences. So, we concluded a larger dataset than 18.8K tweets seems necessary to analyze characters. To be fair and reasonable, we selected not ensembles with better results but ensembles that both perform well and should generalize to new tweets in the Twitter universe. As revealed in the graph above, we built a sampling distribution to show not only our averages, but our standard errors around those averages. The small standard errors indicate each ensemble's consistent performance on 15 cross-validation samples of 6K+ tweets. 15 samples were derived from randomizing seed for 5 iterations and, within each iteration, implementing 3-fold cross-validation.]
             </p>
           <p class="portfolio-text">
             Our combination of 8 models (5 GBDTs, 2 FNNs, and 1 LR) yielded gender harassment probabilities across a sample of 46.2 million tweets. . .
@@ -480,10 +480,10 @@ function carousel() {
           <p class="portfolio-text">
             <br>
             <br>
-            If users collectively tweet an average of 500 million times a day (<a href='http://www.dsayce.com/social-media/tweets-day/' style="color: white" target="_blank"><td>David Sayce, November 2016</td></a>; <a href='http://www.businessinsider.com/twitter-tweets-per-day-appears-to-have-stalled-2015-6' style="color: white" target="_blank"><td>Business Insider, June 2015</td></a>), our products (if scaled) could have not only detected but acted over 1.18 million tweets per week. In full transparency, that also means our products could have incorrectly flagged about 331,000 tweets per week. However, the AI underlying our Twitter Bot and Gender Harassment Tweets Blocker can allow more correct predictions currently (if exchanged for lower detection rates of harassment tweets). For instance, users of the Gender Harassment Tweets Blocker can change the default of 0.70 (hiding tweets with a 70%+ chance of harassment) to 0.85 (hiding tweets with an 85%+ chance of harassment) to have less tweets incorrectly flagged as gender harassment.
+            If users collectively tweet an average of 500 million times a day (<a href='http://www.dsayce.com/social-media/tweets-day/' style="color: white" target="_blank"><td>David Sayce, November 2016</td></a>; <a href='http://www.businessinsider.com/twitter-tweets-per-day-appears-to-have-stalled-2015-6' style="color: white" target="_blank"><td>Business Insider, June 2015</td></a>), our products (if scaled) could have not only detected but responded to over 1.18 million tweets per week. In full transparency, that also means our products could have incorrectly flagged about 331,000 tweets per week. However, the AI underlying our Twitter Bot and Gender Harassment Tweets Blocker can allow more correct predictions currently (if exchanged for lower detection rates of harassment tweets). For instance, users of the Gender Harassment Tweets Blocker can change the default of 0.70 (hiding tweets with a 70%+ chance of harassment) to 0.85 (hiding tweets with an 85%+ chance of harassment) to have less tweets incorrectly flagged as gender harassment.
             <br>
             <br>
-            Projected number of harassment tweets that our AI could have detected on Twitter's full dataset (3/6/2017 - 4/16/2017)
+            Graph below: Projected number of harassment tweets that our AI could have detected on Twitter's full dataset (3/6/2017 - 4/16/2017)
             The horizontal green line refects the projected average of 168K harassment tweets a day across the 6-week timeframe
           </p>
         </div>
