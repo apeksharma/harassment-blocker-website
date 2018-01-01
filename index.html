@@ -83,8 +83,12 @@ function carousel() {
         <br><br><br><br><br><br><br><br><br><br><br><br>
         <h1><font size="38">Empathization</font></h1>
         <!--<h2><font size="20">Mitigating online <span style="color: #008080">gender harassment</span> through</font><br>-->
-        <h2>Mitigating online gender harassment through<br>
+        <!--<h2>Mitigating online gender harassment through<br>
             <span class="rotating">1) user feedback, 2) empathetic innovation, and 3) data-science products</span></h2>
+        -->
+        <h2>Mitigating online gender harassment through<br>
+        <span>1) user feedback, 2) empathetic innovation, and 3) data-science products</span></h2>
+
         <div class="actions">
           <!--<a href="#services" class="btn-services">Global Problem</a>
           <a href="#portfolio" class="btn-portfolio">Product Solutions</a>-->
@@ -92,7 +96,7 @@ function carousel() {
       </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br>
       <span style="color: #fff; text-align: left; font-size: 16px"><i><span style="font-size: 20px; font-weight:bold"> Disclaimer: </span> Given the nature of the problem we're trying to mitigate with our products, please note that as you scroll through the website, <br> you will be exposed to some offensive and violent language. <br> Please continue at your own discretion.</i></span>
-    </div> 
+    </div>
   </section>
   <script>
   var images = [ /*"img/1_pic_sun_thru_clouds_recolored.png",*/ "img/1_pic_Togetherness_recolored.png" ];
@@ -148,7 +152,7 @@ function carousel() {
               The current products revolve around two groups of Twitter users: people who repeatedly send online gender harassment tweets, and people who receive and are affected by such harassment. The products are built upon artificial intelligence (AI) algorithms that learn from humans' detection of gender harassment, and do so in an automated way.
             </p>
             <p class="about-text">
-              Among tweets the algorithms predict as online gender harassment, the algorithms are 76-80% accurate. The user-facing products have shown the scalable potential to not only detect but take action on over 1 million offensive tweets per week.
+              Among tweets the algorithms predict as online gender harassment, the algorithms are accurate 76-80% of the time. One of the user-facing products has shown the scalable potential to not only detect but take action on over 1 million offensive tweets per week.
             </p>
         </div>
       </div>
@@ -332,34 +336,95 @@ function carousel() {
      <p class="products-text"><br><br><br><br><br></p>
 
       <h3 style="color: #666666; text-align: center; font-weight: bold;">THE BOT EFFECT</h3>
-      <h3 style="color: #666666; text-align: center">Field Experiment and Results</h3>
+      <h3 style="color: #666666; text-align: center">Original Field Experiment</h3>
 
       <div class="container about-container">
         <div class="row">
           <!--
           <div class="col-sm-4"></div>
           <div class="col-sm-8"></div>
-          <div class="col-sm-5"></div>
-          <div class="col-md-5 col-md-push-0">
-          -->
+          div class="col-sm-5"></div>
+          <div class="col-md-5 col-md-push-0">-->
           <p class="products-text" style="color: #666666; font-size: 16px">
             <span style="font-weight: bold; color: #00802b; font-size: 18px">Hypothesis:</span> The number of offensive tweets (tweets with harassment probability of 70% or more) per offender in the treatment group will be lower than the number of offensive tweets per offender in the control group post intervention. The intervention is the response from the bot to the offender.
             <br><br>
             <span style="font-weight: bold; color: #00802b; font-size: 18px">Setup:</span>
-            Over 25 million tweets were run through our AI ensemble of models to identify about 4K offenders, excluding porn and bot accounts. Each bot is now set up to track around 1.5K offender accounts for offensive tweets.
+            Over 25 million tweets were run through our AI ensemble of models to identify about 4K offenders, excluding porn and bot accounts. Each bot is set up to track around 1.5K offender accounts for offensive tweets.
             <br><br><span style="font-weight: bold; color: #00802b; font-size: 18px">Randomization:</span>
             As soon as a tweet from a selected offender is flagged as gender harassment, the offender is randomly placed in treatment or control. If they get placed in treatment, the bot replies to their offensive tweet six minutes later. No reply to offenders in the control group.
             <br><br>
-            The experiment ran April 15-23 (with results posted and presented previously) after a brief pilot study. A new, larger pilot study was run June-July 2017, while a full study ran July-September 2017. The rightmost column will be populated with full study results by December 2017.
-          </p>
+            The experiment ran April 15-23 (with results posted and presented previously) after a brief pilot study. We ran a new, larger pilot study from June-July 2017 to refine our approach, and concluded with a more rigorous full study from July-September 2017, which is explained below.
           <!--</div>-->
+          <h3 style="color: #666666; text-align: center">New Field Experiment</h3>
+
+        <div class="container about-container">
+          <div class="row">
+            <!--
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8"></div>
+            div class="col-sm-5"></div>
+            <div class="col-md-5 col-md-push-0">-->
+            <!--</div>-->
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Hypothesis:</span> Over time, users' percent of offensive tweets (tweets with harassment probability of 70% or more) in the treatment groups will we lower than that of the control group, after bots reply to users in treatment groups but not the control group.
+              <br><br>
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Setup:</span>
+              Another set of millions of tweets were run through our AI ensemble of models to identify about 8K offenders who hadn't been in the original field experiment. Each bot has a different profile and photo than the oriignal field experiment. It again is set up to track around 1.5K offender accounts for offensive tweets.
+              <br><br>
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Randomization:</span>
+              We relied on two stages of randomization. At the first stage, the offenders were randomly assigned to one of four bots. For each bot, we observed users for several weeks. Then, at the second stage, as soon as a tweet from an offender is flagged as gender harassment, the offender is randomly placed in treatment or control for that bot. If they get placed in treatment, the bot replies to their offensive tweet 30 seconds later. No reply to offenders in the control group.
+              <br><br>
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Bots:</span>
+              Below is an illustration of the 4 treatment bots, their profile photos and descriptions, and their automated replies.
+              <center><img src="img/Final_Experiment_1of4.png" style="width: 70%; max-height: 80%"></center>
+              <br><br>
+            </p>
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Sample Sizes:</span>
+              The following table shows the number of Twitter harassers tracked during our 6-week study.
+              <center><img src="img/Final_Experiment_2of4.png" style="width: 40%; max-height: 80%"></center>
+              <br><br>
+            </p>
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Results:</span>
+              In the graphs below, the horizontal trend lines show the change in percent of tweets detected as misogynistic before and after 8/11/2017: the date when treatment bots started to reply to harassers. The horizontal trend lines of the Treatment Bots #1 and #2 weren’t statistically different than that of the control group. That is, any difference among them is likely to be due to random chance. [Note: The vertical bars reflect the likely potential variation in percent of misogynistic tweets that could have occurred if we had replicated the experiment.]
+              <center><img src="img/Final_Experiment_3of4.png" style="width: 70%; max-height: 80%"></center>
+              <br><br>
+              <center><img src="img/Final_Experiment_4of4.png" style="width: 70%; max-height: 80%"></center>
+              <br><br>
+            </p>
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Conclusion:</span>
+              The new experiment, with a more rigorous design, suggests no statistically significant impact on misogynistic behavior.
+              <br><br>
+            </p>
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Technical Language (Optional):</span>
+              <br><br>
+              Percents: We measure not the number but percent of misogynistic tweets before vs. after our bots intervened. Why? A trend based off the number of misogynistic tweets can be misleading: A user can decrease from 15 misogynistic tweets last month to 10 this month, yet their percent of misogynistic tweets can increase from 15% (15/100) last month to 50% (10/20) this month.
+              <br><br>
+              Weighting: We weighted each user by their number of overall tweets sent during the study. Why? Percent of misogynistic tweets would be inflated if a person with 5 overall tweets (1 misogynistic out of 5 overall tweets) were weighted the same as a person with 50 overall tweets (10 misogynistic  out of 50 overall tweets).</li>
+              <br><br>
+              Graphs: We show non-regression means and standard errors weighted by number of overall tweets. The vertical bars represent 95% confidence intervals. And the “Post - Pre” label [e.g., “-0.04 (0.02)”] equals the weighted mean, followed by the standard error in parentheses. For each group’s weighted mean, the standard error was computed from a bootstrapped sampling distribution of 200 weighted means.</li>
+              <br><br>
+              Model: We used weighted least squares rather than difference-in-differences regression, as weighted least squares regression is a slightly more functional form. It allows the coefficient (pre-treatment percent of misogynistic tweets) to differ from 1.0. It also allows straightforward weighting (i.e., weighting each user by number of overall tweets for accuracy).
+              <br><br>
+              Equation: post-treatment percent of misogynistic tweets = Intercept +  pre-treatment percent of misogynistic tweets + treatment_bot1 + treatment_bot2 + treatment_bot3 + treatment_bot4</li>
+              <br><br>
+              R-squared: 0.530, Adjusted R-squared: 0.528
+              <br><br>
+              Distribution: While the dependent variable (post-treatment percent of misogynistic tweets) isn’t normally distributed but skewed, the Central Limit Theorem says as samples get large, the sampling distribution has a normal distribution, and regression coefficients will be normally distributed even if the dependent variable isn’t.</li>
+              <br><br>
+              Outliers: Since some Twitter “users” are bots with high tweet activity, we researched several methods for outlier removal: standard deviations, interquartile range, log transformation, median absolute deviation, and top 5% trimming. However, because it’s best to keep all observations unless clear evidence for a specific observation shows otherwise, we proceeded without outlier removal. In general, outlier removal is related to controversial p-hacking.</li>
+              <br><br>
+            </p>
 
           <!--<div class="col-md-3 col-md-push-0">
             <h3 style="text-align: center; font-size: 18px; color: #666666; font-weight: bold;">Randomization Output</h3>
             <span style="color: #666666; font-size: 13px; text-align: justify;"> At the end of one week, there were <span style="font-weight: bold;color: #FF6347"> 70 offenders in Treatment and 48 offenders in Control</span>. Below are the average profile characteristics of each group.</span>
             <img src="img/ran.jpg" align = "center">
           </div>-->
-          
+
           <!--
           <div class="col-md-7 col-md-push-0">
             <div style="font-weight: bold; color: #00802b; font-size: 16px; text-align: center;">Preliminary Results (April 15-23)</div>
@@ -372,7 +437,6 @@ function carousel() {
           -->
       </div>
     </div>
-      
     <div class="container about-container">
       <p class="products-text"><br><br><br></p>
       <h3 style="color: #666666; text-align: center; font-weight: bold;">BOT PIPELINE VIA APACHE STORM</h3>
@@ -381,15 +445,15 @@ function carousel() {
     <p class="products-text"><br><br><br></p>
     <div class="container about-container">
       <p class="products-text" style="font-size:20px">
-        The <span style="font-weight: bold; font-size: 24px; color: #00802b">Gender Harassment Tweets Blocker</span> is the second product. In contrast to the first product, women can download this Chrome browser extension to automatically block tweets that the product predicts to be gender harassment. Based on feedback, women have two customizable features to start. One can adjust a setting that automatically hides/removes tweets at their preferred level (e.g., tweets that have 60%+ chance of harassment, 80%+ chance of harassment, etc.). In addition, one can click a button to flag tweets as gender harassment that the browser extension didn't block (similar to clicking spam in email), or flag tweets as not gender harassment (similar to restoring email that went to spam incorrectly).
+        The <span style="font-weight: bold; font-size: 24px; color: #00802b"><a href='https://chrome.google.com/webstore/detail/gender-harassment-tweets/elahhgfdmmiicibmckogidoijgngjjbi' target="_blank">Gender Harassment Tweets Blocker (Chrome Web Store)</a></span> is the second product. In contrast to the first product, women can download this Chrome extension to automatically block tweets that the product predicts to be gender harassment. Based on feedback, women have two customizable features to start. One can adjust a setting that automatically hides/removes tweets at their preferred level (e.g., tweets that have 60%+ chance of harassment, 80%+ chance of harassment, etc.). In addition, one can click a button to flag tweets as gender harassment that the browser extension didn't block (similar to clicking spam in email), or flag tweets as not gender harassment (similar to restoring email that went to spam incorrectly).
         <br>
         <br>
-        With positive user experience our top priority, we plan to add a complex but essential layer of web security around the product before release. In addition, the product will be accompanied by a 5-minute, step-by-step video tutorial to facilitate how one can quickly use the product. Please stay tuned for December 2017. . . The product has been demonstrated at UC Berkeley and at Google.
+        With positive user experience our top priority, a layer of web security was added before official release in December 2017. The product was first demonstrated at UC Berkeley and at Google in April and May 2017, respectively.
       </p>
       <p class="products-text" style="font-size:20px">
-      <h3 style="color: #666666; text-align: center; font-weight: bold;">Chrome Web Store: Free Downloadable Product To Be Released</h3>
+      <!--<h3 style="color: #666666; text-align: center; font-weight: bold;">Chrome Web Store: Free Downloadable Product</h3>-->
       <!--<center><a href="https://chrome.google.com/webstore/detail/gender-harassment-tweets/kclkekheidigikajgdijmmoiocfggnin" style="height:100px target=_blank"><img src="img/extension.png" style="width: 80%;max-height: 80%"></a></center>-->
-      <center><img src="img/extension.png" style="width: 80%;max-height: 80%"></center>
+      <center><img src="img/Chrome_Extension_Image.png" style="width: 80%;max-height: 80%"></center>
       <p class="products-text"><br><br></p>
     </div>
   </section>
@@ -404,8 +468,8 @@ function carousel() {
           <p class="subscribe-text">Please email us to join other subscribers, and inform and receive our latest product developments:
             <br>
             <br>
-            empathization.info@gmail.com 
-          </p>  
+            empathization.info@gmail.com
+          </p>
         </div>
       </div>
     </div>
@@ -697,7 +761,7 @@ function carousel() {
             </div>
           </div>
         </div>
-        
+
         <div class="col-md-3">
           <div class="member">
             <div class="pic"><img src="img/team-Shruti van Hemmen.jpg" height="220" alt=""></div>
